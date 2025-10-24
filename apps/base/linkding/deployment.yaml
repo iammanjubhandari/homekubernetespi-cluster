@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: linkding
+  labels:
+    app: linkding
+
+
+
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3               # 3 old ReplicaSets kept for rollback
+  strategy:
+    type: RollingUpdate                 # Rolling updates
+    rollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 1
+
+selector:
+    matchLabels:
+      app: linkding
+
+
+ports:
+  - containerPort: 9090
