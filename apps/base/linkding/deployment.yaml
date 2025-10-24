@@ -20,6 +20,10 @@ selector:
     matchLabels:
       app: linkding
 
+template:
+  metadata:
+    labels:
+      app: linkding
 
 ports:
   - containerPort: 9090
