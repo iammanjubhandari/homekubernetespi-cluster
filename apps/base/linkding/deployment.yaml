@@ -23,3 +23,12 @@ selector:
 
 ports:
   - containerPort: 9090
+
+envFrom:
+  - secretRef:
+      name: linkding-container-env
+
+volumes:
+    - name: linkding-data
+      persistentVolumeClaim:
+        claimName: linkding-data-pvc
