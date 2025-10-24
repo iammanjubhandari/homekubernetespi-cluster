@@ -27,6 +27,11 @@ ports:
 envFrom:
   - secretRef:
       name: linkding-container-env
+    
+    resources:
+      requests:
+        cpu: 100m
+        memory: 128Mi
 
 volumes:
     - name: linkding-data
