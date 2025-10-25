@@ -37,7 +37,13 @@ ports:
 envFrom:
   - secretRef:
       name: linkding-container-env
-    
+
+volumeMounts:
+  - name: linkding-data
+    mountPath: /etc/linkding/data
+
+
+
     resources:
       requests:
         cpu: 100m
