@@ -2,11 +2,16 @@ apiVersion: v1
 kind: Service
 metadata: 
   name: linkding
-
+  labels:
+    app: linkding
+    environment: new         
+    managed-by: kubectl
 spec:
   selector: 
     app: linkding
   type: ClusterIP
+ports:
+    port: 80                    # expose service on port 80 (standard HTTP)
 
 
 
