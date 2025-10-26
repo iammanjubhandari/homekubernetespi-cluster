@@ -1,0 +1,11 @@
+# PersistentVolumeClaim for Bookmark-App data
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  lables:
+    app.kubernetes.io/name: bookmark-app
+    app.kubernetes.io/component: storage
+    owner: iammanjubhandari-org
+    org:iammanjubhandari-labels
+
