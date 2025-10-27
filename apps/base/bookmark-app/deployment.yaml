@@ -43,8 +43,8 @@ envFrom:
       name: linkding-container-env
 
 volumeMounts:
-  - name: linkding-data
-    mountPath: /etc/linkding/data
+  - name: bookmark-data
+    mountPath: /etc/bookmark/data
 
 
 
@@ -57,6 +57,6 @@ volumeMounts:
         memory: 512Mi
 
 volumes:
-    - name: linkding-data
+    - name: bookmark-data
       persistentVolumeClaim:
-        claimName: linkding-data-pvc
+        claimName: bookmark-data-pvc
