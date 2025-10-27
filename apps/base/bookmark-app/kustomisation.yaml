@@ -1,4 +1,4 @@
-
+# Base Kustomization for Bookmark-App
 
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
@@ -8,5 +8,10 @@ resources:
   - storage.yaml
   - deployment.yaml
   - service.yaml
-
   
+commonLabels:
+  app.kubernetes.io/name: bookmark-app
+  managed-by: fluxcd
+  owner: iammanjubhandari
+  org: iammanjubhandari-org
+  layer: apps-base
