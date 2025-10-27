@@ -3,4 +3,11 @@ project:
   maintainer: iammanjubhandari
   organization: iammanjubhandari-org
   cluster: pi-cluster
-
+  tools:
+    - fluxcd
+    - sops
+    - kustomize
+    - longhorn
+  environment: base
+description: >
+  GitOps-based deployment of a bookmark management web application
