@@ -1,0 +1,6 @@
+project:
+  name: bookmark-app
+  maintainer: iammanjubhandari
+  organization: iammanjubhandari-org
+  cluster: pi-cluster
+
