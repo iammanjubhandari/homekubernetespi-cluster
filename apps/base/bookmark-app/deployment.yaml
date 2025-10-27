@@ -3,11 +3,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: linkding
+  name: bookmark-app-deploy
   labels:
-    app: linkding
-
-
+    app.kubernetes.io/name: bookmark-app
+    app.kubernetes.io/component: backend
+    owner: iammanjubhandari
+    org: iammanjubhandari-org
+    environment: base
 
 spec:
   replicas: 1
@@ -20,15 +22,15 @@ spec:
 
 selector:
     matchLabels:
-      app: linkding
+      app: bookmark-app
 
 template:
   metadata:
     labels:
-      app: linkding
+      app: bookmark-app
 
 containers:
-  - name: linkding
+  - name: bookmark-app
     image: sissbruecker/linkding:1.31.0
     imagePullPolicy: IfNotPresent
 
