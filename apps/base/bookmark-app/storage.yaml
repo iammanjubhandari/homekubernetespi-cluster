@@ -3,15 +3,20 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
+  name: bookmark-app-pvc
   lables:
     app.kubernetes.io/name: bookmark-app
     app.kubernetes.io/component: storage
-    owner: iammanjubhandari-org
-    org:iammanjubhandari-labels
+    owner: iammanjubhandari
+    org: iammanjubhandari-org
+    environment: base
 spec:
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 1Gi
+      storage: 2Gi
   storageClassName: longhorn
+
+
+
