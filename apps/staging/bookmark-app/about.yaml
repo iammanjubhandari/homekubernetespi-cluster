@@ -1,0 +1,5 @@
+environment:
+  name: staging
+  ingress_host: bookmark-stg.manju-labs.net
+  cloudflare_tunnel: bookmark-tunnel
+  replicas: 2

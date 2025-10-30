@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bookmark-app-cloudflared
+
+
+
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bookmark-app-cloudflared
