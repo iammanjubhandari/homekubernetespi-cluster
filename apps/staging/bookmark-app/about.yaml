@@ -1,3 +1,5 @@
+# Project metadata for staging overlay (not applied by Flux)
+
 environment:
   name: staging
   ingress_host: bookmark-stg.manju-labs.net

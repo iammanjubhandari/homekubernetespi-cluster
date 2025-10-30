@@ -10,3 +10,7 @@ spec:
   selector:
     matchLabels:
       app: bookmark-app-cloudflared
+  template:
+    metadata:
+      labels:
+        app: bookmark-app-cloudflared

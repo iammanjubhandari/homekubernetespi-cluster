@@ -3,3 +3,16 @@ kind: Ingress
 
 
 
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: bookmark-stg.manju-labs.net
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: bookmark-app-svc
+                port:
+                  number: 80
