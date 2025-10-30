@@ -14,3 +14,10 @@ spec:
     metadata:
       labels:
         app: bookmark-app-cloudflared
+
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bookmark-app-cloudflared
