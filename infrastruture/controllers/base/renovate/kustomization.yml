@@ -5,3 +5,9 @@ resources:
   - renovate-container-env.yaml
   - configmap.yaml
 
+commonLabels:
+  app.kubernetes.io/name: renovate
+  managed-by: fluxcd
+  owner: manju-org
+  org: manju-labs
+  layer: infrastructure-base
