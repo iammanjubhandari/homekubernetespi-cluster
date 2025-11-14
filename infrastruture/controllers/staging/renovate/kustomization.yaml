@@ -3,3 +3,7 @@ kind: Kustomization
 
 resources:
   - renovate
+
+commonLabels:
+  environment: staging
+  app.kubernetes.io/name: renovate
