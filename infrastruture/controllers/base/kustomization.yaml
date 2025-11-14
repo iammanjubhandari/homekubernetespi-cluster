@@ -7,5 +7,5 @@ resources:
 commonLabels:
   layer: infrastructure-base
   managed-by: fluxcd
-  owner: manju-org
+  owner: iammanjubhandari
   org: manju-labs
